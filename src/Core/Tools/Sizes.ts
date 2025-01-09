@@ -1,6 +1,6 @@
 import { EventEmitter } from './EventEmitter'
 
-export class Sizer extends EventEmitter<{
+export class Sizes extends EventEmitter<{
   resize: []
 }> {
   /** 宽度 */

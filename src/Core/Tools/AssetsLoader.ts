@@ -5,7 +5,7 @@ import { DRACOLoader, FontLoader, GLTFLoader } from 'three/addons'
 
 import { EventEmitter } from './EventEmitter'
 
-type TParams = {
+export type TParams = {
   /** 纹理 */
   texture?: Record<string, { name: string, url: string }>
   /** 字体 */

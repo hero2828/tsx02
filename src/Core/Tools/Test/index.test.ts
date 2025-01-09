@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { AssetsLoader } from '../AssetsLoader'
 import { EventEmitter } from '../EventEmitter'
-import { Sizer } from '../Sizer'
+import { Sizes } from '../Sizes'
 
 describe('发布/订阅', () => {
   const emitter = new EventEmitter<{
@@ -54,11 +54,11 @@ describe('资源加载器', () => {
 })
 
 describe('尺寸计算', () => {
-  const sizer = new Sizer()
+  const sizes = new Sizes()
   it('计算尺寸', () => {
-    sizer.on('resize', () => {
-      expect(sizer.width).toEqual(1920)
-      expect(sizer.height).toEqual(1080)
+    sizes.on('resize', () => {
+      expect(sizes.width).toEqual(1920)
+      expect(sizes.height).toEqual(1080)
     })
   })
 })
